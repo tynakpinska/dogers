@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap");
 
 $backgroundColor: rgb(240, 238, 227);
-$mainFontColor: rgba(165,61,23, 1);
-$color1: rgba(242,182,4, 1);
-$color2: rgba(242,135,4, 1);
-$color3: rgba(140,15,131, 1);
+$mainFontColor: rgba(165, 61, 23, 1);
+$color1: rgba(242, 182, 4, 1);
+$color2: rgba(242, 135, 4, 1);
+$color3: rgba(140, 15, 131, 1);
 $color3darker: rgb(84, 8, 79);
-$color4: rgba(242,229,167, 1);
+$color4: rgba(242, 229, 167, 1);
 $mainFont: Rubik;
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: $backgroundColor;
-    color: $mainFontColor;
-    font-family: $mainFont;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $mainFontColor;
+  font-family: $mainFont;
+}
 
- 
-
- 
+body {
+  background: $backgroundColor;
+}

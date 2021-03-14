@@ -1,14 +1,11 @@
-import React, { useState } from "react";
-import Nav from "./Nav";
+import React from "react";
 import "./Header.scss";
 
-const Header = () => {
-  const [open, setOpen] = useState(false);
+const Header = ({open}) => {
 
   return (
     <header>
-      {open ? null : <h1>Dogers</h1>}
-      <Nav open={open} setOpen={setOpen} />
+      <h1>Dogers</h1>
     </header>
   );
 };

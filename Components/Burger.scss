@@ -1,0 +1,48 @@
+@use '../src/index';
+
+.burgerIcon {
+    position:absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.burgerPart {
+  width: 20px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: index.$color3;
+  &:nth-child(2) {
+    margin: 5px 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.transformed.burgerIcon {
+    width: 19.8px;
+    height: 19.8px;
+}
+
+.transformed#part1 {
+  width: 25px;
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  transform: rotate(45deg);
+}
+
+.transformed#part3 {
+  width: 25px;
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  transform: rotate(-45deg);
+}
