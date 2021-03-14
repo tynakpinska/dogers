@@ -1,8 +1,15 @@
 import React from "react";
+import "Home.scss";
 
-const Home = () => {
+const Home = ({ open }) => {
   return (
-    <h2>Home</h2>
+    <div className={open ? "hero open" : "hero"}>
+      <p className="hero-text">
+        Explore our community of dog walkers or find a dog to pet
+      </p>
+      <button className="hero-button_first">I have a dog</button>
+      <button className="hero-button">I'm a walker</button>
+    </div>
   );
 };
 

@@ -1,0 +1,71 @@
+@use '../src/index';
+$hero: "../src/img/hero.jpg";
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.open {
+  height: 60vh;
+}
+
+.hero.open::before {
+  content: "";
+  width: 100%;
+  height: 60vh;
+  background-image: url($hero);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 90vh;
+  background-image: url($hero);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.hero-text {
+  position: relative;
+  grid-column: 1 / 3;
+  text-align: center;
+  padding: 20px 10px;
+  color: index.$color4;
+  text-shadow: 2px 2px 2px index.$color3;
+}
+
+.hero-button,
+.hero-button_first {
+  position: relative;
+  background: none;
+  border: 2px solid index.$color4;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  color: index.$color3;
+  height: 20%;
+  align-self: end;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.hero-button_first {
+  background: index.$color4;
+}

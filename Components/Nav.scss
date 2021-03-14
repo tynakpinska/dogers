@@ -6,14 +6,15 @@
   margin: 0 auto;
   width: 100%;
   background-color: index.$color4;
-  li {
-    padding: 10px;
-    a {
-      text-decoration: none;
-    }
-    &:nth-child(2) {
-      border-top: 1px solid index.$color2;
-      border-bottom: 1px solid index.$color2;
-    }
+}
+
+.menu-item {
+  padding: 10px;
+  a {
+    text-decoration: none;
+  }
+  &:nth-child(2) {
+    border-top: 1px solid index.$color2;
+    border-bottom: 1px solid index.$color2;
   }
 }
