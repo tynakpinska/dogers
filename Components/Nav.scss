@@ -6,15 +6,24 @@
   margin: 0 auto;
   width: 100%;
   background-color: index.$color4;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .menu-item {
-  padding: 10px;
+  height: 5vh;
+  line-height: 5vh;
   a {
     text-decoration: none;
   }
   &:nth-child(2) {
     border-top: 1px solid index.$color2;
     border-bottom: 1px solid index.$color2;
+  }
+  &:hover {
+    cursor: pointer;
+    background: #f1e9bd;
   }
 }

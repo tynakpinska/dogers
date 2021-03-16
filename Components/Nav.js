@@ -26,10 +26,10 @@ const Nav = ({ open }) => {
 
       <Switch>
         <Route path="/login">
-          <LogIn />
+          <LogIn open={open} />
         </Route>
         <Route path="/register">
-          <Register />
+          <Register open={open} />
         </Route>
         <Route path="/">
           <Home open={open} />
