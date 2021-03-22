@@ -4,27 +4,27 @@ import "./Register.scss";
 const Register = ({ open }) => {
   return (
     <div className={open ? "register open" : "register"}>
-      <h2 className="register-header">Register</h2>
-      <form className="register-form">
-        <label className="register-label" htmlFor="login">
+      <h2 className="register__header">Register</h2>
+      <form className="register__form">
+        <label className="register__label" htmlFor="login">
           Login:{" "}
         </label>
-        <input className="register-input" type="text" name="login" required />
-        <label className="register-label" htmlFor="email">
+        <input className="register__input" type="text" name="login" required />
+        <label className="register__label" htmlFor="email">
           Email:{" "}
         </label>
-        <input className="register-input" type="email" name="email" required />
-        <label className="register-label" htmlFor="password">
+        <input className="register__input" type="email" name="email" required />
+        <label className="register__label" htmlFor="password">
           Password:{" "}
         </label>
         <input
-          className="register-input"
+          className="register__input"
           type="password"
           name="password"
           required
         />
         <input
-          className="register-input__button"
+          className="register__input--button"
           type="submit"
           value="Register"
         />

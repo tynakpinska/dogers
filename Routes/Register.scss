@@ -16,25 +16,25 @@
     height: 75vh;
   }
 
-.register-header {
+.register__header {
     padding: 10px;
 }
 
-.register-form {
+.register__form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.register-input {
+.register__input {
     border: none;
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
 }
 
-.register-input__button {
+.register__input--button {
     padding: 10px;
     border: none;
     border-radius: 10px;

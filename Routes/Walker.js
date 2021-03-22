@@ -1,7 +1,7 @@
 import React from "react";
-import "DogWalker.scss";
+import "Walker.scss";
 
-const DogWalker = ({ open }) => {
+const Walker = () => {
   return (
     <div>
         <button>Publish an offer</button>
@@ -10,4 +10,4 @@ const DogWalker = ({ open }) => {
   );
 };
 
-export default DogWalker;
+export default Walker;

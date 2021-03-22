@@ -16,25 +16,25 @@
   height: 75vh;
 }
 
-.login-header {
+.login__header {
     padding: 10px;
 }
 
-.login-form {
+.login__form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.login-input {
+.login__input {
     border: none;
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
 }
 
-.login-input__button {
+.login__input--button {
     padding: 10px;
     border: none;
     border-radius: 10px;

@@ -4,17 +4,17 @@ import "./Login.scss";
 const LogIn = ({ open }) => {
   return (
     <div className={open ? "login open" : "login"}>
-      <h2 className="login-header">Log in</h2>
-      <form className="login-form">
-        <label className="login-label" htmlFor="name">
+      <h2 className="login__header">Log in</h2>
+      <form className="login__form">
+        <label className="login__label" htmlFor="name">
           Login:{" "}
         </label>
-        <input className="login-input" type="text" name="name" required />
-        <label className="login-label" htmlFor="email">
+        <input className="login__input" type="text" name="name" required />
+        <label className="login__label" htmlFor="email">
           Password:{" "}
         </label>
-        <input className="login-input" type="password" name="email" required />
-        <input className="login-input__button" type="submit" value="Log in" />
+        <input className="login__input" type="password" name="email" required />
+        <input className="login__input--button" type="submit" value="Log in" />
       </form>
     </div>
   );
