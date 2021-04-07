@@ -19,11 +19,15 @@
     text-decoration: none;
   }
   &:nth-child(2) {
-    border-top: 1px solid rgba(242, 135, 4, .3);
-    border-bottom: 1px solid rgba(242, 135, 4, .3);
+    border-top: 1px solid rgba(242, 135, 4, 0.3);
+    border-bottom: 1px solid rgba(242, 135, 4, 0.3);
   }
   &:hover {
     cursor: pointer;
     background: #f1e9bd;
   }
+}
+
+.active {
+  font-weight: bold;
 }
