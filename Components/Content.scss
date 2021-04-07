@@ -1,0 +1,44 @@
+@use '../src/index';
+$hero: "../src/img/hero.jpg";
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+  
+  .open {
+    height: 75vh;
+  }
+  
+  .content.open::before {
+    content: "";
+    width: 100%;
+    height: 75vh;
+    background-image: url($hero);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  
+  .content::before {
+    content: "";
+    width: 100%;
+    height: 90vh;
+    background-image: url($hero);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  

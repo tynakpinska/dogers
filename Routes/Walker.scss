@@ -1,0 +1,20 @@
+@use "../src/index";
+
+.walker {
+  grid-column: 2 / 4;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.walker__button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+  box-shadow: 3px 3px 3px index.$color3;
+  &:hover {
+      cursor: pointer;
+  }
+}

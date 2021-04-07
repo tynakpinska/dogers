@@ -20,6 +20,16 @@
   &:nth-child(2) {
     margin: 5px 0;
   }
+  &:hover {
+    width: 15px;
+  }
+}
+
+.burgerIcon__part--middle {
+  width: 15px;
+  &:hover {
+    width: 20px;
+  }
 }
 
 .hidden {
@@ -31,7 +41,8 @@
     height: 19.8px;
 }
 
-.transformed#part1 {
+
+.transformed.burgerIcon__part--first {
   width: 25px;
   position: absolute;
   top: 8px;
@@ -39,7 +50,7 @@
   transform: rotate(45deg);
 }
 
-.transformed#part3 {
+.transformed.burgerIcon__part--last {
   width: 25px;
   position: absolute;
   top: 8px;

@@ -19,8 +19,8 @@
     text-decoration: none;
   }
   &:nth-child(2) {
-    border-top: 1px solid index.$color2;
-    border-bottom: 1px solid index.$color2;
+    border-top: 1px solid rgba(242, 135, 4, .3);
+    border-bottom: 1px solid rgba(242, 135, 4, .3);
   }
   &:hover {
     cursor: pointer;
