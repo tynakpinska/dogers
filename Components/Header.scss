@@ -1,7 +1,13 @@
+@use "../src/index.scss";
+
 .header {
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    background: index.$color4;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }

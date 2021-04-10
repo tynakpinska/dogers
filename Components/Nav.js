@@ -17,13 +17,19 @@ const Nav = ({ open }) => {
         <nav>
           <ul className="menu">
             <li className="menu__item">
-              <NavLink to="/" activeClassName="active">Home</NavLink>
+              <NavLink exact to="/" activeClassName="active">
+                Home
+              </NavLink>
             </li>
             <li className="menu__item">
-              <NavLink to="/login" activeClassName="active">Log In</NavLink>
+              <NavLink to="/login" activeClassName="active">
+                Log In
+              </NavLink>
             </li>
             <li className="menu__item">
-              <NavLink to="/register" activeClassName="active">Register</NavLink>
+              <NavLink to="/register" activeClassName="active">
+                Register
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -42,7 +48,19 @@ const Nav = ({ open }) => {
         <Route path="/walker">
           <Content open={open} content="walker" />
         </Route>
-        <Route exact path="/">
+        <Route path="/walkers-list">
+          <Content open={open} content="walkers-list" />
+        </Route>
+        <Route path="/dogs-list">
+          <Content open={open} content="dogs-list" />
+        </Route>
+        <Route path="/owner-form">
+          <Content open={open} content="owner-form" />
+        </Route>
+        <Route path="/walker-form">
+          <Content open={open} content="walker-form" />
+        </Route>
+        <Route path="/">
           <Content open={open} content="home" />
         </Route>
       </Switch>
