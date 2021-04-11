@@ -4,14 +4,15 @@
   background: index.$color4;
   border-radius: 5px;
   width: 90vw;
-  margin: 10px auto;
-  padding: 10px;
+  margin: 20px auto;
+  padding: 20px;
   text-align: center;
 }
 
 .card__image {
-  width: 80vw;
-  height: 60vw;
+  width: 90%;
+  height: 150px;
   object-fit: cover;
   border-radius: 3px;
+  margin: 20px auto;
 }

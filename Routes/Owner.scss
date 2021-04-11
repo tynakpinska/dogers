@@ -15,7 +15,7 @@
   border: none;
   box-shadow: 3px 3px 3px index.$color3;
   text-decoration: none;
-  background-color: rgba(index.$color4, 0.8);
+  background-color: index.$color4;
   &:hover {
     cursor: pointer;
   }

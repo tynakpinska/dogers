@@ -10,10 +10,10 @@ const LogIn = ({ open }) => {
           Login:{" "}
         </label>
         <input className="login__input" type="text" name="name" required />
-        <label className="login__label" htmlFor="email">
+        <label className="login__label" htmlFor="password">
           Password:{" "}
         </label>
-        <input className="login__input" type="password" name="email" required />
+        <input className="login__input" type="password" name="password" required />
         <input className="login__input--button" type="submit" value="Log in" />
       </form>
     </div>

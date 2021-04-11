@@ -6,7 +6,7 @@
   margin: 0 auto;
   width: 100%;
   background-color: index.$color4;
-  height: 15vh;
+  height: 18vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -16,14 +16,17 @@
 }
 
 .menu__item {
-  height: 5vh;
-  line-height: 5vh;
+  height: 6vh;
+  line-height: 6vh;
   a {
     text-decoration: none;
   }
   &:nth-child(2) {
     border-top: 1px solid rgba(242, 135, 4, 0.3);
     border-bottom: 1px solid rgba(242, 135, 4, 0.3);
+  }
+  &:nth-child(3) {
+    border-bottom: 5px solid #cabc9d;
   }
   &:hover {
     cursor: pointer;
