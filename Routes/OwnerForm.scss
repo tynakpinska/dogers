@@ -7,14 +7,10 @@
   width: 100vw;
   height: 90vh;
   overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .open {
-  height: 75vh;
+  height: 72vh;
 }
 
 .owner-form__header {
@@ -26,6 +22,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 
 .owner-form__input {
@@ -43,4 +40,21 @@
     margin-top: 30px;
     background: index.$color2;
     color: index.$color4;
+}
+
+.owner-form__label {
+    font-weight: bold;
+}
+
+.owner-form__label--checkbox {
+    font-weight: normal;
+}
+
+.owner-form__picture {
+    width: 80vw;
+    height: 60vw;
+    border-radius: 10px;
+    background: #fff;
+    opacity: .7;
+    margin: 5px;
 }

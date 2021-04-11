@@ -10,6 +10,18 @@ const OwnerForm = ({ open }) => {
           Dog's name:{" "}
         </label>
         <input className="owner-form__input" type="text" name="name" required />
+
+        <label className="owner-form__label" htmlFor="picture">
+          Add picture:{" "}
+        </label>
+        <img className="owner-form__picture" src="" alt="" />
+        <input
+          className="owner-form__input"
+          type="file"
+          name="picture"
+          accept="image/png, image/jpeg"
+        />
+
         <label className="owner-form__label" htmlFor="race">
           Dog's race:{" "}
         </label>
@@ -22,7 +34,7 @@ const OwnerForm = ({ open }) => {
           Localization:{" "}
         </label>
         <input className="owner-form__input" type="text" name="localization" />
-        <h3>Services needed: </h3>
+        <p className="owner-form__label">Services needed: </p>
         <div>
           <input
             className="owner-form__input"
@@ -30,7 +42,7 @@ const OwnerForm = ({ open }) => {
             name="walk"
             value="walk"
           />
-          <label className="owner-form__label" htmlFor="walk">
+          <label className="owner-form__label--checkbox" htmlFor="walk">
             walk
           </label>
         </div>
@@ -41,7 +53,7 @@ const OwnerForm = ({ open }) => {
             name="playing"
             value="playing"
           />{" "}
-          <label className="owner-form__label" htmlFor="playing">
+          <label className="owner-form__label--checkbox" htmlFor="playing">
             playing
           </label>
         </div>
@@ -52,7 +64,7 @@ const OwnerForm = ({ open }) => {
             name="training"
             value="training"
           />
-          <label className="owner-form__label" htmlFor="training">
+          <label className="owner-form__label--checkbox" htmlFor="training">
             training
           </label>
         </div>
@@ -63,7 +75,7 @@ const OwnerForm = ({ open }) => {
             name="feeding"
             value="feeding"
           />
-          <label className="owner-form__label" htmlFor="feeding">
+          <label className="owner-form__label--checkbox" htmlFor="feeding">
             feeding
           </label>
         </div>
@@ -74,7 +86,7 @@ const OwnerForm = ({ open }) => {
             name="washing"
             value="washing"
           />{" "}
-          <label className="owner-form__label" htmlFor="washing">
+          <label className="owner-form__label--checkbox" htmlFor="washing">
             washing
           </label>
         </div>
@@ -84,9 +96,8 @@ const OwnerForm = ({ open }) => {
             type="checkbox"
             name="combing"
             value="combing"
-          />{" "}
-          {/* czesanie  */}
-          <label className="owner-form__label" htmlFor="combing">
+          />
+          <label className="owner-form__label--checkbox" htmlFor="combing">
             combing
           </label>
         </div>
@@ -96,9 +107,8 @@ const OwnerForm = ({ open }) => {
             type="checkbox"
             name="shearing"
             value="shearing"
-          />{" "}
-          {/* strzyżenie  */}{" "}
-          <label className="owner-form__label" htmlFor="shearing">
+          />
+          <label className="owner-form__label--checkbox" htmlFor="shearing">
             shearing
           </label>
         </div>
@@ -109,10 +119,14 @@ const OwnerForm = ({ open }) => {
             name="declawing"
             value="declawing"
           />{" "}
-          <label className="owner-form__label" htmlFor="declawing">
+          <label className="owner-form__label--checkbox" htmlFor="declawing">
             declawing
           </label>
         </div>
+        <label className="owner-form__label" htmlFor="name">
+          Your name:{" "}
+        </label>
+        <input className="owner-form__input" type="text" name="name" required />
         <input
           className="owner-form__input--button"
           type="submit"
