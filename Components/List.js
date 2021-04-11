@@ -5,9 +5,9 @@ import Card from "./Card";
 const List = ({ type }) => {
   return (
     <div className="cards-list">
-      <Card />
-      <Card />
-      <Card />
+      <Card type={type} />
+      <Card type={type} />
+      <Card type={type} />
     </div>
   );
 };
