@@ -2,6 +2,37 @@ import React from "react";
 import "./WalkerForm.scss";
 
 const WalkerForm = ({ open }) => {
+  const readFile = file => {
+    const image = document.querySelector(".walker-form__picture");
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.addEventListener("load", () => {
+      image.src = reader.result;
+    });
+  };
+
+  const handleChange = e => {
+    readFile(e.target.files[0]);
+  };
+
+  const handleDrop = e => {
+    e.stopPropagation();
+    e.preventDefault();
+    const dt = e.dataTransfer;
+    const files = dt.files;
+    readFile(files[0]);
+  };
+
+  const handleDragEnter = e => {
+    e.stopPropagation();
+    e.preventDefault();
+  };
+
+  const handleDragOver = e => {
+    e.stopPropagation();
+    e.preventDefault();
+  };
+
   return (
     <div className={open ? "walker-form open" : "walker-form"}>
       <h2 className="walker-form__header">Publish an offer</h2>
@@ -19,12 +50,20 @@ const WalkerForm = ({ open }) => {
         <label className="walker-form__label" htmlFor="picture">
           Add picture:{" "}
         </label>
-        <img className="walker-form__picture" src="" alt="" />
+        <img
+          className="walker-form__picture"
+          src=""
+          alt=""
+          onDragEnter={handleDragEnter}
+          onDragOver={handleDragOver}
+          onDrop={handleDrop}
+        />
         <input
           className="walker-form__input"
           type="file"
           name="picture"
           accept="image/png, image/jpeg"
+          onChange={handleChange}
         />
 
         <label className="walker-form__label" htmlFor="price">

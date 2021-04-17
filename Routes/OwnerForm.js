@@ -2,6 +2,38 @@ import React from "react";
 import "./OwnerForm.scss";
 
 const OwnerForm = ({ open }) => {
+  const readFile = file => {
+    const image = document.querySelector(".owner-form__picture");
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.addEventListener("load", () => {
+      image.src = reader.result;
+    });
+  };
+
+  const handleChange = e => {
+    readFile(e.target.files[0]);
+  };
+
+  const handleDrop = e => {
+    e.stopPropagation();
+    e.preventDefault();
+    console.log("drop");
+    const dt = e.dataTransfer;
+    const files = dt.files;
+    readFile(files[0]);
+  };
+
+  const handleDragEnter = e => {
+    e.stopPropagation();
+    e.preventDefault();
+  };
+
+  const handleDragOver = e => {
+    e.stopPropagation();
+    e.preventDefault();
+  };
+
   return (
     <div className={open ? "owner-form open" : "owner-form"}>
       <h2 className="owner-form__header">Publish an offer</h2>
@@ -14,12 +46,20 @@ const OwnerForm = ({ open }) => {
         <label className="owner-form__label" htmlFor="picture">
           Add picture:{" "}
         </label>
-        <img className="owner-form__picture" src="" alt="" />
+        <img
+          className="owner-form__picture"
+          src=""
+          alt=""
+          onDragEnter={handleDragEnter}
+          onDragOver={handleDragOver}
+          onDrop={handleDrop}
+        />
         <input
           className="owner-form__input"
           type="file"
           name="picture"
           accept="image/png, image/jpeg"
+          onChange={handleChange}
         />
 
         <label className="owner-form__label" htmlFor="race">
