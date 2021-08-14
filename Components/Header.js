@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.scss";
 import Burger from "../Components/Burger";
 import Nav from "../Components/Nav";
 
-const Header = () => {
-  const [open, setOpen] = useState(false);
-  const handleClick = () => {
-    open ? setOpen(false) : setOpen(true);
+import { NavLink } from "react-router-dom";
 
+const Header = ({ open, setOpen }) => {
+  const toggleBurger = () => {
     document
       .querySelector(".burgerIcon__part--first")
       .classList.toggle("transformed");
@@ -20,13 +19,20 @@ const Header = () => {
     document.querySelector(".burgerIcon").classList.toggle("transformed");
   };
 
+  const handleClick = () => {
+    open ? setOpen(false) : setOpen(true);
+    toggleBurger();
+  };
+
   return (
     <>
       <header className="header">
-        <h1>Dogers</h1>
+        <NavLink exact to="/" activeClassName="active">
+          <h1>Dogers</h1>
+        </NavLink>
         <Burger handleClick={handleClick} />
       </header>
-      <Nav open={open} setOpen={setOpen} />
+      <Nav open={open} setOpen={setOpen} toggleBurger={toggleBurger} />
     </>
   );
 };
