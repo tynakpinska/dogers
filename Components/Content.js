@@ -1,12 +1,12 @@
 import React from "react";
 import "Content.scss";
-import Home from "../Routes/Home";
-import Owner from "../Routes/Owner";
-import Walker from "../Routes/Walker";
-import WalkersList from "../Routes/WalkersList";
-import DogsList from "../Routes/DogsList";
-import WalkerForm from "../Routes/WalkerForm";
-import OwnerForm from "../Routes/OwnerForm";
+import Home from "../Routes/Home/Home";
+import Owner from "../Routes/Owner/Owner";
+import Walker from "../Routes/Walker/Walker";
+import WalkersList from "../Routes/Owner/WalkersList";
+import DogsList from "../Routes/Walker/DogsList";
+import WalkerForm from "../Routes/Walker/WalkerForm";
+import OwnerForm from "../Routes/Owner/OwnerForm";
 
 const Content = ({ open, content }) => {
   return (

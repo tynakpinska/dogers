@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "./Components/Header";
 import Content from "./Components/Content";
-import LogIn from "./Routes/LogIn";
-import Register from "./Routes/Register";
+import LogIn from "./Routes/LogIn/LogIn";
+import Register from "./Routes/Register/Register";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {

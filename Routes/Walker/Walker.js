@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "Walker.scss";
+import "./Walker.scss";
 
 const Walker = () => {
   return (
