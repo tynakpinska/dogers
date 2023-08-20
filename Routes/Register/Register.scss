@@ -7,19 +7,20 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
 .open {
-    height: 72vh;
-  }
+  height: 72vh;
+}
 
 .register__header {
-    padding: 10px;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
 .register__form {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,18 +28,34 @@
 }
 
 .register__input {
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 5px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.register__input:active,
+.register__input:focus {
+  outline: 2px solid #8c0f83;
 }
 
 .register__input--button {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-top: 30px;
-    background: index.$color2;
-    color: index.$color4;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 30px;
+  background: index.$color2;
+  color: index.$color4;
+}
+
+fieldset {
+  border: 1px solid #8c0f83;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
 }
